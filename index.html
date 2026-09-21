@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PureMind — Mental Health Awareness</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #f4f7f5;
+    --card: #ffffff;
+    --primary: #2d6a4f;
+    --primary-light: #d8f3dc;
+    --text: #1b2a24;
+    --muted: #5c6f66;
+  }
+
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(135deg, #2d6a4f, #40916c);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1.5rem;
+  }
+
+  header h1 { font-size: 2.6rem; letter-spacing: 1px; }
+  header p { max-width: 600px; margin: 1rem auto 0; opacity: 0.92; }
+
+  nav {
+    background: var(--card);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.9rem;
+  }
+
+  nav a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  nav a:hover { text-decoration: underline; }
+
+  section { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; }
+
+  h2 { color: var(--primary); margin-bottom: 1.2rem; text-align: center; }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.2rem;
+  }
+
+  .card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .card h3 { color: var(--primary); margin-bottom: 0.5rem; }
+  .card p { color: var(--muted); font-size: 0.95rem; }
+
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  .stat { text-align: center; }
+  .stat strong { font-size: 2rem; color: var(--primary); display: block; }
+  .stat span { color: var(--muted); font-size: 0.9rem; }
+
+  .helpline {
+    background: var(--primary-light);
+    border-radius: 16px;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+  }
+  .helpline .number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: 2px;
+  }
+  .helpline small { display: block; margin-top: 0.5rem; color: var(--muted); }
+
+  form {
+    max-width: 480px;
+    margin: 1.5rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #cde3d5;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button:hover { background: #1b4332; }
+
+  .hidden-msg {
+    display: none;
+    color: var(--primary);
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding: 2rem 1rem 3rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌿 PureMind</h1>
+  <p>Raising awareness, breaking the stigma, and reminding you that your mental health matters — every single day.</p>
+</header>
+
+<nav>
+  <a href="#awareness">Awareness</a>
+  <a href="#tips">Wellness Tips</a>
+  <a href="#helpline">Helpline</a>
+</nav>
+
+<section id="awareness">
+  <h2>Why Mental Health Awareness Matters</h2>
+  <div class="stats">
+    <div class="stat"><strong>1 in 4</strong><span>people experience a mental health issue each year</span></div>
+    <div class="stat"><strong>50%</strong><span>of lifetime mental illness begins by age 14</span></div>
+    <div class="stat"><strong>2×</strong><span>more likely to recover when support is sought early</span></div>
+  </div>
+</section>
+
+<section id="tips">
+  <h2>Simple Ways to Care for Your Mind</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>💧 Stay Hydrated & Rested</h3>
+      <p>Sleep and hydration directly affect mood, focus, and emotional resilience.</p>
+    </div>
+    <div class="card">
+      <h3>🚶 Move Every Day</h3>
+      <p>Even a 20-minute walk releases endorphins that naturally reduce stress.</p>
+    </div>
+    <div class="card">
+      <h3>🗣️ Talk About It</h3>
+      <p>Opening up to someone you trust is a strength, not a weakness.</p>
+    </div>
+    <div class="card">
+      <h3>📵 Unplug Often</h3>
+      <p>Limiting screen time, especially social media, helps calm an anxious mind.</p>
+    </div>
+    <div class="card">
+      <h3>🧘 Practice Mindfulness</h3>
+      <p>A few minutes of deep breathing or meditation can reset your whole day.</p>
+    </div>
+    <div class="card">
+      <h3>💚 Be Kind to Yourself</h3>
+      <p>Progress isn't linear. Celebrate small wins and forgive setbacks.</p>
+    </div>
+  </div>
+</section>
+
+<section id="helpline">
+  <div class="helpline">
+    <h2>You're Not Alone 💚</h2>
+    <p>Our PureMind Support Line is here to listen — free, confidential, and open 24/7.</p>
+    <div class="number">📞 1-800-PURE-MIND</div>
+    <small>(This is a demonstration helpline — in a real crisis, please contact local emergency services.)</small>
+    <form id="supportForm">
+      <input type="text" id="name" placeholder="Your name (optional)" required>
+      <textarea id="message" rows="3" placeholder="Tell us how you're feeling — we'll do our best to help..." required></textarea>
+      <button type="submit">Send Message</button>
+      <p class="hidden-msg" id="sent">✅ Message received. Someone will reach out soon. You matter. 💚</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  PureMind — raising mental health awareness. This site is for demonstration purposes only.<br>
+  If you or someone you know is in immediate danger, call your local emergency number.
+</footer>
+
+<script>
+  document.getElementById('supportForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('sent').style.display = 'block';
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
